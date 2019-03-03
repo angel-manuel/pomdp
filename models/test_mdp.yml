@@ -1,0 +1,40 @@
+type: MDP
+states:
+  - name: A
+    actions:
+      - name: nothing
+        reward: 0.0
+        transition:
+          - [1.0, A]
+      - name: right
+        reward: 0.0
+        transition:
+          - [0.2, A]
+          - [0.8, B]
+  - name: B
+    actions:
+      - name: nothing
+        reward: 0.0
+        transition:
+          - [1.0, B]
+      - name: left
+        reward: 0.0
+        transition:
+          - [0.2, B]
+          - [0.8, A]
+      - name: right
+        reward: 0.0
+        transition:
+          - [0.2, B]
+          - [0.8, C]
+  - name: C
+    actions:
+      - name: nothing
+        reward: 1.0
+        transition:
+          - [1.0, C]
+      - name: left
+        reward: 0.0
+        transition:
+          - [0.2, C]
+          - [0.8, B]
