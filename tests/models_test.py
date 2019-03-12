@@ -11,7 +11,7 @@ class MDPTests(unittest.TestCase):
     def test_from_obj(self):
         model_path = Path(os.path.dirname(__file__) +
                           '/../models/test_mdp.yml').resolve()
-        print(model_path)
+
         with open(model_path) as f:
             obj = yaml.load(f)
 
