@@ -12,7 +12,6 @@ mypy = "*"
 networkx = "*"
 pyyaml = "*"
 matplotlib = "*"
-tkinter = "*"
 
 [requires]
 python_version = "3.7"
